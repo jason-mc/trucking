@@ -1,6 +1,8 @@
 <?php echo file_get_contents("html/header1.html"); ?>
 <title>Hoffman Trucking</title>
 <?php echo file_get_contents("html/header2.html"); ?>
+<link rel="stylesheet" href="../css/styles.css" type="text/css">
+<link rel="stylesheet" href="../css/about-us.css" type="text/css">
 <div class="wrapper row2">
   <div id="container" class="clear">
     <!-- ####################################################################################################### -->
