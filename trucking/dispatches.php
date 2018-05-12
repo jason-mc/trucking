@@ -1,14 +1,5 @@
 <?php
-$db_host = 'localhost'; // Server Name
-$db_user = 'root'; // Username
-$db_pass = 'Help091!'; // Password
-$db_name = 'trucking'; // Database Name
-
-$conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
-if (!$conn) {
-	die ('Failed to connect to MySQL: ' . mysqli_connect_error());	
-}
-
+require_once("../config.php");
 
 $today=$_GET['today'];
 $driverId=$_GET['driverId']; 

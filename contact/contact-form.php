@@ -27,7 +27,7 @@ display:none;
 <div class="row">
 
 <div class="col-md-8">
-<h1><img src="Inquiry.png" width="80px">Easy Contact Form With Ajax MySQL</h1>
+<h1><img src="../dispatch-icon.png" width="80px">Easy Contact Form With Ajax MySQL</h1>
 <form name="contact-form" action="" method="post" id="contact-form">
 <div class="form-group">
 <label for="Name">Name</label>
@@ -47,7 +47,7 @@ display:none;
 </div>
 
 <button type="submit" class="btn btn-primary" name="submit" value="Submit" id="submit_form">Submit</button>
-<img src="img/loading.gif" id="loading-img">
+<img src="../images/loading.gif" id="loading-img">
 </form>
 
 <div class="response_msg"></div>

@@ -1,5 +1,5 @@
 <?php 
-require_once("config.php");
+require_once("../config.php");
 if((isset($_POST['dispatch_invoice'])&& $_POST['dispatch_invoice'] !='') && (isset($_POST['dispatch_truck'])&& $_POST['dispatch_truck'] !='') &&
 (isset($_POST['dispatch_po_number'])&& $_POST['dispatch_po_number'] !='') && (isset($_POST['dispatch_sales_initials'])&& $_POST['dispatch_sales_initials'] !='') &&
 (isset($_POST['dispatch_delivery_number'])&& $_POST['dispatch_delivery_number'] !='') && (isset($_POST['dispatch_customer_name'])&& $_POST['dispatch_customer_name'] !='') &&

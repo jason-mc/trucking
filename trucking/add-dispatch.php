@@ -27,7 +27,7 @@ display:none;
 <div class="row">
 
 <div class="col-md-8">
-<h1><img src="images/dispatch-icon.jpg" width="80px">Add new dispatch</h1>
+<h1><img src="../images/dispatch-icon.jpg" width="80px">Add new dispatch</h1>
 <form name="dispatch-form" action="" method="post" id="dispatch-form">
 <div class="form-group">
 <label for="Invoice">Invoice Number</label>
@@ -75,7 +75,7 @@ display:none;
 </div>
 
 <button type="submit" class="btn btn-primary" name="submit" value="Submit" id="submit_form">Submit</button>
-<img src="images/loading.gif" id="loading-img">
+<img src="../images/loading.gif" id="loading-img">
 </form>
 
 <div class="response_msg"></div>
