@@ -47,7 +47,7 @@
             </figure>
           </li>
           <li class="one_third first">
-            <figure><img src="images/demo/team-member.gif" alt="">
+            <figure><img src="images/team-member.gif" alt="">
               <figcaption>
                 <p class="team_name">Name Goes Here</p>
                 <p class="team_title">Job Title Here</p>
@@ -56,7 +56,7 @@
             </figure>
           </li>
           <li class="one_third">
-            <figure><img src="images/demo/team-member.gif" alt="">
+            <figure><img src="images/team-member.gif" alt="">
               <figcaption>
                 <p class="team_name">Name Goes Here</p>
                 <p class="team_title">Job Title Here</p>
@@ -65,7 +65,7 @@
             </figure>
           </li>
           <li class="one_third">
-            <figure><img src="images/demo/team-member.gif" alt="">
+            <figure><img src="images/team-member.gif" alt="">
               <figcaption>
                 <p class="team_name">Name Goes Here</p>
                 <p class="team_title">Job Title Here</p>
