@@ -17,11 +17,11 @@ $sql = 'SELECT *
 		FROM dispatches';
 
 if(isset($today)&& $today !=''){
-	$sql += " WHERE date(CURRENT_DATE) ";
+	$sql .= " WHERE date(CURRENT_DATE) ";
 } else if(isset($driverId)&& $driverId !=''){
-	$sql += " WHERE driver_id LIKE " .$driverId. "";
+	$sql .= " WHERE driver_id LIKE " .$driverId. "";
 } else if((isset($today)&& $today !='') && (isset($driverId)&& $driverId !='')){
-	$sql += " WHERE  date(CURRENT_DATE) AND driver_id LIKE " .$driverId. "";
+	$sql .= " WHERE  date(CURRENT_DATE) AND driver_id LIKE " .$driverId. "";
 }
 echo '<script type="text/javascript">alert("'.$sql.'");</script>';
 $query = mysqli_query($conn, $sql);
