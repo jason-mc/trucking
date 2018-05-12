@@ -9,6 +9,7 @@ if((isset($_POST['dispatch_invoice'])&& $_POST['dispatch_invoice'] !='') && (iss
  //require_once("contact_mail.php");
 
 $dispatchInvoice = $conn->real_escape_string($_POST['dispatch_invoice']);
+$dispatchDriverId = $conn->real_escape_string($_POST['dispatch_driver_id']);
 $dispatchTruck = $conn->real_escape_string($_POST['dispatch_truck']);
 $dispatchPoNumber = $conn->real_escape_string($_POST['dispatch_po_number']);
 $dispatchSalesInitials = $conn->real_escape_string($_POST['dispatch_sales_initials']);
@@ -20,8 +21,8 @@ $dispatchMaterials = $conn->real_escape_string($_POST['dispatch_materials']);
 $dispatchTimeslot = $conn->real_escape_string($_POST['dispatch_timeslot']);
 
 //$sql="INSERT INTO dispatches (firstname, email, phone, comments) VALUES ('".$yourName."','".$yourEmail."', '".$yourPhone."', '".$comments."')";
-$sql="INSERT INTO `dispatches` (`id`, `invoice`, `truck`, `po_number`, `sales_initials`, `delivery_number`, `customer`, `customer_number`, `customer_phone`, `location_dropoff`, `materials`, `date`, `timeslot`) ".
-       " VALUES (NULL, '".$dispatchInvoice."', '".$dispatchtruck."', '".$dispatchPoNumber."', '".$dispatchSalesInitials."', '".$dispatchDeliveryNumber."', '".$dispatchCustomerName."', NULL, '".$dispatchCustomerPhone."', '".$dispatchLocationDropoff."', '".$dispatchMaterials."', CURRENT_TIMESTAMP, '".$dispatchTimeslot."')";
+$sql="INSERT INTO `dispatches` (`id`, `invoice`, `driver_id`, `truck`, `po_number`, `sales_initials`, `delivery_number`, `customer`, `customer_number`, `customer_phone`, `location_dropoff`, `materials`, `date`, `timeslot`) ".
+       " VALUES (NULL, '".$dispatchInvoice."', '".$dispatchDriverId."', '".$dispatchTruck."', '".$dispatchPoNumber."', '".$dispatchSalesInitials."', '".$dispatchDeliveryNumber."', '".$dispatchCustomerName."', NULL, '".$dispatchCustomerPhone."', '".$dispatchLocationDropoff."', '".$dispatchMaterials."', CURRENT_TIMESTAMP, '".$dispatchTimeslot."')";
 
 
 if(!$result = $conn->query($sql)){

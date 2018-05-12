@@ -27,11 +27,15 @@ display:none;
 <div class="row">
 
 <div class="col-md-8">
-<h1><img src="img/dispatch-icon.jpg" width="80px">Add new dispatch</h1>
+<h1><img src="images/dispatch-icon.jpg" width="80px">Add new dispatch</h1>
 <form name="dispatch-form" action="" method="post" id="dispatch-form">
 <div class="form-group">
 <label for="Invoice">Invoice Number</label>
 <input type="text" class="form-control" name="dispatch_invoice" placeholder="Invoice" required>
+</div>
+<div class="form-group">
+<label for="Driver_ID">Driver ID</label>
+<input type="text" class="form-control" name="dispatch_driver_id" placeholder="Driver ID: 1=ED" required>
 </div>
 <div class="form-group">
 <label for="Truck">Truck</label>

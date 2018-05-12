@@ -9,14 +9,27 @@ if (!$conn) {
 	die ('Failed to connect to MySQL: ' . mysqli_connect_error());	
 }
 
+
+$today=$_GET['today'];
+$driverId=$_GET['driverId']; 
+
 $sql = 'SELECT * 
 		FROM dispatches';
-		
+
+if($today){
+	$sql+= " WHERE date(CURRENT_DATE) ";
+} else if($driverId){
+	$sql+= " WHERE driver_id LIKE " .$driverId. "";
+} else if($today && $driverId){
+	$sql+= " WHERE  date(CURRENT_DATE) AND driver_id LIKE " .$driverId. "";
+}
+
 $query = mysqli_query($conn, $sql);
 
 if (!$query) {
 	die ('SQL Error: ' . mysqli_error($conn));
 }
+
 ?>
 <html>
 <head>
