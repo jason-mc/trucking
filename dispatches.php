@@ -109,7 +109,7 @@ if (!$query) {
 		<thead>
 			<tr>
 				<th>ID</th>
-				<th>NO</th>
+				<th>INVOICE</th>
 				<th>TRUCK</th>
 				<th>PO NUMBER</th>
 				<th>SALES PERSON</th>
