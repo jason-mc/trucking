@@ -16,14 +16,14 @@ $driverId=$_GET['driverId'];
 $sql = 'SELECT * 
 		FROM dispatches';
 
-if($today){
-	$sql+= " WHERE date(CURRENT_DATE) ";
-} else if($driverId){
-	$sql+= " WHERE driver_id LIKE " .$driverId. "";
-} else if($today && $driverId){
-	$sql+= " WHERE  date(CURRENT_DATE) AND driver_id LIKE " .$driverId. "";
+if(isset($today)&& $today !=''){
+	$sql += " WHERE date(CURRENT_DATE) ";
+} else if(isset($driverId)&& $driverId !=''){
+	$sql += " WHERE driver_id LIKE " .$driverId. "";
+} else if((isset($today)&& $today !='') && (isset($driverId)&& $driverId !='')){
+	$sql += " WHERE  date(CURRENT_DATE) AND driver_id LIKE " .$driverId. "";
 }
-
+echo '<script type="text/javascript">alert("'.$sql.'");</script>';
 $query = mysqli_query($conn, $sql);
 
 if (!$query) {
@@ -142,19 +142,19 @@ if (!$query) {
 		$total 	= 0;
 		while ($row = mysqli_fetch_array($query))
 		{
-			$amount  = $row['amount'] == 0 ? '' : number_format($row['amount']);
+			//$amount  = $row['amount'] == 0 ? '' : number_format($row['amount']);
 			echo '<tr>
 					<td>'.$row['id'].'</td>
 					<td>'.$row['invoice'].'</td>
 					<td>'.$row['truck'].'</td>
-                                        <td>'.$row['po_number'].'</td>
-                                        <td>'.$row['sales_initials'].'</td>
-                                        <td>'.$row['delivery_number'].'</td>
-                                        <td>'.$row['customer_number'].'</td>
-                                        <td>'.$row['customer'].'</td>
-                                        <td>'.$row['customer_phone'].'</td>
-                                        <td>'.$row['location_dropoff'].'</td>
-                                        <td>'.$row['materials'].'</td>
+					<td>'.$row['po_number'].'</td>
+					<td>'.$row['sales_initials'].'</td>
+					<td>'.$row['delivery_number'].'</td>
+					<td>'.$row['customer_number'].'</td>
+					<td>'.$row['customer'].'</td>
+					<td>'.$row['customer_phone'].'</td>
+					<td>'.$row['location_dropoff'].'</td>
+					<td>'.$row['materials'].'</td>
 					<td>'. date('F d, Y', strtotime($row['date'])) . '</td>
 					<td>'.$row['timeslot'].'</td>
 				</tr>';
