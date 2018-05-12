@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
+<?php echo file_get_contents("../html/header1.html"); ?>
+<title>Hoffman Trucking</title>
+<?php echo file_get_contents("../html/header2.html"); ?>
+
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <style>
@@ -20,8 +21,7 @@ display:none;
 }
 
 </style>
-</head>
-<body>
+
 
 <div class="container">
 <div class="row">
@@ -123,5 +123,5 @@ $(this).css("border","1px solid #eeeeee");
 });
 });
 </script>
-</body>
-</html>
+<?php echo file_get_contents("../html/header3.html"); ?>
+

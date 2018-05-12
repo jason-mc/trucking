@@ -22,9 +22,11 @@ if (!$query) {
 }
 
 ?>
-<html>
-<head>
-	<title>Displaying Dispatches Table</title>
+<?php echo file_get_contents("../html/header1.html"); ?>
+<title>Displaying Dispatches Table</title>
+<?php echo file_get_contents("../html/header2.html"); ?>
+
+
 	<style type="text/css">
 		body {
 			font-size: 15px;
@@ -160,5 +162,5 @@ if (!$query) {
 			</tr>
 		</tfoot>
 	</table>
-</body>
-</html>
+
+<?php echo file_get_contents("../html/header3.html"); ?>
