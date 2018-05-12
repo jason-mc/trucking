@@ -106,7 +106,7 @@ data: sendData,
 success: function(data){
 $("#loading-img").css("display","none");
 $(".response_msg").text(data);
-$(".response_msg").slideDown().fadeOut(3000);
+$(".response_msg").slideDown().fadeOut(4000);
 $("#dispatch-form").find("input[type=text], input[type=email], textarea").val("");
 }
 

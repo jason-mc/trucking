@@ -17,9 +17,9 @@ $sql = 'SELECT *
 		FROM dispatches';
 
 if((isset($today)&& $today !='') && (isset($driverId)&& $driverId !='')){
-	$sql .= " WHERE  date(CURRENT_DATE) AND driver_id LIKE " .$driverId;
+	$sql .= " WHERE dispatches.date >= DATE(CURRENT_DATE)  AND driver_id LIKE " .$driverId;
 } else if(isset($today)&& $today !=''){
-	$sql .= " WHERE date(CURRENT_DATE) ";
+	$sql .= " WHERE dispatches.date >= DATE(CURRENT_DATE) ";
 } else if(isset($driverId)&& $driverId !=''){
 	$sql .= " WHERE driver_id LIKE " .$driverId;
 }
