@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
 #cssmenu {
-  background: #f96e5b;
+  background: #2e2a2a;
   width: auto;
 }
 #cssmenu ul {
@@ -83,7 +83,7 @@
   display: none;
 }
 #cssmenu ul li.active a {
-  color: #333333;
+  color: #d12b2b;
 }
 #cssmenu ul li.active a:before {
   width: 100%;
