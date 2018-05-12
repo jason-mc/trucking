@@ -20,7 +20,6 @@ $dispatchLocationDropoff = $conn->real_escape_string($_POST['dispatch_location_d
 $dispatchMaterials = $conn->real_escape_string($_POST['dispatch_materials']);
 $dispatchTimeslot = $conn->real_escape_string($_POST['dispatch_timeslot']);
 
-//$sql="INSERT INTO dispatches (firstname, email, phone, comments) VALUES ('".$yourName."','".$yourEmail."', '".$yourPhone."', '".$comments."')";
 $sql="INSERT INTO `dispatches` (`id`, `invoice`, `driver_id`, `truck`, `po_number`, `sales_initials`, `delivery_number`, `customer`, `customer_number`, `customer_phone`, `location_dropoff`, `materials`, `date`, `timeslot`) ".
        " VALUES (NULL, '".$dispatchInvoice."', '".$dispatchDriverId."', '".$dispatchTruck."', '".$dispatchPoNumber."', '".$dispatchSalesInitials."', '".$dispatchDeliveryNumber."', '".$dispatchCustomerName."', NULL, '".$dispatchCustomerPhone."', '".$dispatchLocationDropoff."', '".$dispatchMaterials."', CURRENT_TIMESTAMP, '".$dispatchTimeslot."')";
 

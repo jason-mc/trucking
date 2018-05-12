@@ -73,10 +73,6 @@ display:none;
 <label for="timeslot">Timeslot</label>
 <input type="text" class="form-control" name="dispatch_timeslot" placeholder="timeslot" required>
 </div>
-<div class="form-group">
-<label for="comments">Comments</label>
-<textarea name="comments" class="form-control" rows="3" cols="28" rows="5" placeholder="Comments"></textarea> 
-</div>
 
 <button type="submit" class="btn btn-primary" name="submit" value="Submit" id="submit_form">Submit</button>
 <img src="images/loading.gif" id="loading-img">
