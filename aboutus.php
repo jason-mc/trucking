@@ -13,8 +13,8 @@
       <section id="about-intro" class="clear">
         <h2>About Us</h2>
         <img src="images/960x340.gif" alt="">
-        <p>Hoffman Trucking provides a large variety of materials for completion of your project. We offer a wide variety of landscaping materials for all of your landscaping projects big or small. With excellent customer service and the best pricing in the region for decorative rock, flagstone, sand, and organic materials we are sure we can help you find what you need for a price that you’ll love.</p>
-        <p>We can Deliver materials right to your door.</p>
+        <p>Hoffman Trucking provides trucking services for completion of your project.</p>
+        <p>We can deliver products right to the customer's door.</p>
       </section>
       <!-- ####################################################################################################### -->
       <section id="team">
@@ -34,7 +34,7 @@
               <figcaption>
                 <p class="team_name">Jim Smith</p>
                 <p class="team_title">Operator</p>
-                <p class="team_description">Jim has been operating heavy mechinery for over a decade and will provide excelent care of you projects site when delivoring your requested materials.</p>
+                <p class="team_description">Jim has been operating heavy mechinery for over a decade.</p>
               </figcaption>
             </figure>
           </li>

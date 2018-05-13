@@ -34,14 +34,6 @@ display:none;
 <input type="text" class="form-control" name="dispatch_invoice" placeholder="Invoice" required>
 </div>
 <div class="form-group">
-<label for="Driver_ID">Driver ID</label>
-<input type="text" class="form-control" name="dispatch_driver_id" placeholder="Driver ID: 1=ED" required>
-</div>
-<div class="form-group">
-<label for="Truck">Truck</label>
-<input type="text" class="form-control" name="dispatch_truck" placeholder="Truck" required>
-</div>
-<div class="form-group">
 <label for="PO_Number">PO Number</label>
 <input type="text" class="form-control" name="dispatch_po_number" placeholder="PO" required>
 </div>
@@ -50,8 +42,20 @@ display:none;
 <input type="text" class="form-control" name="dispatch_sales_initials" placeholder="initials" required>
 </div>
 <div class="form-group">
+<label for="Driver_ID">Driver ID</label>
+<input type="text" class="form-control" name="dispatch_driver_id" placeholder="Driver ID: 1=Ed, 2=Jim" required>
+</div>
+<div class="form-group">
+<label for="Truck">Truck</label>
+<input type="text" class="form-control" name="dispatch_truck" placeholder="Transfer or End Dump" required>
+</div>
+<div class="form-group">
 <label for="sales_delivery_number">Delivery Number</label>
 <input type="text" class="form-control" name="dispatch_delivery_number" placeholder="delivery number" required>
+</div>
+<div class="form-group">
+<label for="timeslot">Timeslot</label>
+<input type="text" class="form-control" name="dispatch_timeslot" placeholder="timeslot" required>
 </div>
 <div class="form-group">
 <label for="customer_name">Customer Name</label>
@@ -68,10 +72,6 @@ display:none;
 <div class="form-group">
 <label for="materials">Materials</label>
 <input type="text" class="form-control" name="dispatch_materials" placeholder="material" required>
-</div>
-<div class="form-group">
-<label for="timeslot">Timeslot</label>
-<input type="text" class="form-control" name="dispatch_timeslot" placeholder="timeslot" required>
 </div>
 
 <button type="submit" class="btn btn-primary" name="submit" value="Submit" id="submit_form">Submit</button>
